@@ -1,0 +1,55 @@
+.extra-margin{
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+.extra-padding{
+	padding-bottom: 2em;
+	padding-right: 4em;
+	padding-left: 4em;
+}
+
+.item1-background{
+	background-color: #005b96; 
+
+}
+
+.item2-background{
+	background-color: #6497b1;
+}
+
+.web-background{
+	background-color: #b3cde0;
+
+}
+
+.title{
+	font-size: 4em;
+	color: white;
+}
+
+.subtitle{
+	font-size: 3em;
+	color: white;
+}
+
+.subtitle2{
+	font-size: 2em;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
