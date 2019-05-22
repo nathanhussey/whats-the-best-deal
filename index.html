@@ -13,7 +13,7 @@
 	<div class="container extra-margin">
 		<div class="row align-items-center">
 			<div class="col-sm-12 col-xl-12 text-center title">
-				What's the Best Deal?
+				Which is the Best Deal?
 			</div>
 		</div>
 		
@@ -26,14 +26,14 @@
 		</div>
 		<div class="row">
 			<div class="col-12 col-xl-12 text-center subtitle2">How much does it cost?</div>
-			<input class="col-12 text-center" placeholder="15" name="Item1 price" type="number">
+			<input class="col-12 text-center" placeholder="15" name="Item1 price" type="number" id = "item1Cost">
 		</div>
 		<div class="row">
 			<div class="col-12 col-xl-12 text-center subtitle2">
 				How much do you get?
 			</div>
-			<input class="col-6 text-center" placeholder="23" type ="number"name="Item1 volume">
-			<select class="col-6 ">
+			<input class="col-6 text-center" placeholder="23" type ="number" name="Item1 volume" id = "item1Quant">
+			<select class="col-6 " id="item1Unit">
 				<option value="mg">mg</option>
 				<option value="g">g</option>
 				<option value="kg">kg</option>
@@ -52,31 +52,38 @@
 		</div>
 		<div class="row">
 			<div class="col-12 col-xl-12 text-center subtitle2">How much does it cost?</div>
-			<input class="col-12 text-center" placeholder="15" name="Item1 price" type="number">
+			<input class="col-12 text-center" placeholder="15" name="Item1 price" type="number" id = "item2Cost">
 		</div>
 		<div class="row">
 			<div class="col-12 col-xl-12 text-center subtitle2">
 				How much do you get?
 			</div>
-			<input class="col-6 text-center" placeholder="23" type ="number"name="Item1 volume" type="number">
-			<select class="col-6 ">
+			<input class="col-6 text-center" placeholder="23" type ="number"name="Item1 volume" type="number" id = "item2Quant">
+			<select class="col-6 " id="item2Unit">
 				<option value="mg">mg</option>
 				<option value="g">g</option>
 				<option value="kg">kg</option>
 				<option value="lbs">lbs</option>
 				<option value="L">L</option>
 				<option value="mL">mL</option>
-				<option value="Oz">Oz</option>
+				<option value="oz">Oz</option>
 			</select>
 		</div>
 	</div>
 	<div>
 		<div class="row justify-content-center">
-			<button type="button" class="btn btn-primary btn-lg subtitle">
+			<button type="button" class="btn btn-primary btn-lg subtitle" id = 
+			"resultButton">
 			Get Result
 			</button>
 		</div>
+		<div class="row justify-content-center">
+			<div class="col-sm-12 col-xl-12 text-center subtitle" id="displayResult">
+				
+			</div>
+			
+		</div>
 	</div>	
-	
+	<script src="scripts/script.js"></script>
 </body>
 </html>
