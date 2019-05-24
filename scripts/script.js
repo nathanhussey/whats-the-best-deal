@@ -14,21 +14,25 @@ let displayResult = document.getElementById("displayResult")
 
 //checks if kg and L unit groups are being compared
 function unitCheck(unit1, unit2) {
-	unit1Group = undefined;
-	unit2Group = undefined;
 	groupKg = ["kg","g","mg","lbs"]
 	groupL = ["L","mL","oz"]
+	unit1Group = groupL;
+	unit2Group = groupL;
 	for (let i = 0; i< groupKg.length;i++){
 		if (unit1 === groupKg[i]){
 			unit1Group = groupKg;
 			break;
-		} else {unit1Group = groupL}
+			
+		} 
+		else {}
+		
 	}
-	for (let i = 0; i< groupL.length;i++){
+	for (let i = 0; i< groupKg.length;i++){
 		if (unit2 === groupKg[i]){
 			unit2Group = groupKg;
 			break;
-		} else {unit2Group = groupL}
+		} 
+		else {}
 	}
 	if (unit1Group !== unit2Group){
 		displayResult.innerText = "Sorry you can not compare these two measurements.Change unit of measurement.";
@@ -58,16 +62,13 @@ function calculateValue(price,quant,unit) {
 
 function bestDeal(item1,item2) {
 	if (item1 > item2){
-		displayResult.innerText ="item1 is the better deal";
-		console.log(1)		
+		displayResult.innerText ="item1 is the better deal";		
 	}
 	else if(item2 > item1) {
-		displayResult.innerText = "item2 is the better deal";
-		console.log(2)				
+		displayResult.innerText = "item2 is the better deal";			
 
 	} 
 	else{displayResult.innerText = "both deals are the same"}
-		console.log(3)
 }
 
 function getResult(){
@@ -84,13 +85,8 @@ function getResult(){
 		let selectedUnit2 = item2Unit.options[item2Unit.selectedIndex].text;
 		unitChecked = unitCheck(selectedUnit1,selectedUnit2)
 		if (unitChecked === true){
-			console.log(item1Cost)
-			console.log(item1Quant)
-			console.log(selectedUnit1)
 			item1 = calculateValue(item1Cost,item1Quant,selectedUnit1);
 			item2 = calculateValue(item2Cost,item2Quant,selectedUnit2);
-			console.log(item1)
-			console.log(item2)
 			bestDeal(item1,item2);
 		} else{}
 		
