@@ -9,79 +9,82 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
-<body class="web-background">
-	<div class="container extra-margin">
-		<div class="row align-items-center">
-			<div class="col-sm-12 col-xl-12 text-center title">
-				Which is the Best Deal?
-			</div>
-		</div>
-		
-	</div>
-	<div class="container extra-margin item1-background extra-padding ">
-		<div class="row">
-			<div class="col-sm-12 col-xl-12 text-center subtitle">
-				Item 1
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-12 col-xl-12 text-center subtitle2">How much does it cost?</div>
-			<input class="col-12 text-center" placeholder="15" name="Item1 price" type="number" id = "item1Cost">
-		</div>
-		<div class="row">
-			<div class="col-12 col-xl-12 text-center subtitle2">
-				How much do you get?
-			</div>
-			<input class="col-6 text-center" placeholder="23" type ="number" name="Item1 volume" id = "item1Quant">
-			<select class="col-6 " id="item1Unit">
-				<option value="mg">mg</option>
-				<option value="g">g</option>
-				<option value="kg">kg</option>
-				<option value="lbs">lbs</option>
-				<option value="L">L</option>
-				<option value="mL">mL</option>
-				<option value="Oz">Oz</option>
-			</select>
-		</div>
-	</div>
-	<div class="container extra-margin item2-background extra-padding">
-		<div class="row">
-			<div class="col-sm-12 col-xl-12 text-center subtitle">
-				Item 2
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-12 col-xl-12 text-center subtitle2">How much does it cost?</div>
-			<input class="col-12 text-center" placeholder="15" name="Item1 price" type="number" id = "item2Cost">
-		</div>
-		<div class="row">
-			<div class="col-12 col-xl-12 text-center subtitle2">
-				How much do you get?
-			</div>
-			<input class="col-6 text-center" placeholder="23" type ="number"name="Item1 volume" type="number" id = "item2Quant">
-			<select class="col-6 " id="item2Unit">
-				<option value="mg">mg</option>
-				<option value="g">g</option>
-				<option value="kg">kg</option>
-				<option value="lbs">lbs</option>
-				<option value="L">L</option>
-				<option value="mL">mL</option>
-				<option value="oz">Oz</option>
-			</select>
-		</div>
-	</div>
-	<div>
-		<div class="row justify-content-center">
-			<button type="button" class="btn btn-primary btn-lg subtitle" id = 
-			"resultButton">
-			Get Result
-			</button>
-		</div>
-		<div class="row justify-content-center">
-			<div class="col-sm-12 col-xl-12 text-center subtitle" id="displayResult">
-				
+<body class="web-background extra-content-padding">
+	<div class="content-background ">
+		<div class="container  ">
+			<div class="row align-items-center">
+				<div class="col-sm-12 col-xl-12 text-center title extra-title-margin ">
+					Which is the Best Deal?
+				</div>
 			</div>
 			
+		</div>
+		<div class="container extra-padding ">
+			<div class="row">
+				<div class="col-sm-12 col-xl-12 subtitle">
+					Item 1
+				</div>
+			</div>
+			<div class="row extra-row-margin">
+				<div class="col-9 subtitle2">How much does it cost?</div>
+				<input class="col-3 text-center" placeholder="15" name="Item1 price" type="number" id = "item1Cost">
+			</div>
+			<div class="row extra-row-margin">
+				<div class="col-7 subtitle2 ">
+					How many units?
+				</div>
+				<input class="col-3 text-center " placeholder="23" type ="number" name="Item1 volume" id = "item1Quant">
+				<select class="col-2 " id="item1Unit">
+					<option value="mg">mg</option>
+					<option value="g">g</option>
+					<option value="kg">kg</option>
+					<option value="lbs">lbs</option>
+					<option value="L">L</option>
+					<option value="mL">mL</option>
+					<option value="Oz">Oz</option>
+				</select>
+			</div>
+		</div>
+		<div class="container extra-padding">
+			<div class="row extra-row-margin">
+				<div class="col-sm-12 col-xl-12  subtitle">
+					Item 2
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-9 subtitle2">How much does it cost?</div>
+				<input class="col-3 text-center" placeholder="15" name="Item1 price" type="number" id = "item2Cost">
+			</div>
+			<div class="row extra-row-margin">
+				<div class="col-7 col-xl-12 subtitle2">
+					How many units?
+				</div>
+				<input class="col-3 text-center" placeholder="23" type ="number"name="Item1 volume" type="number" id = "item2Quant">
+				<select class="col-2 " id="item2Unit">
+					<option value="mg">mg</option>
+					<option value="g">g</option>
+					<option value="kg">kg</option>
+					<option value="lbs">lbs</option>
+					<option value="L">L</option>
+					<option value="mL">mL</option>
+					<option value="oz">Oz</option>
+				</select>
+			</div>
+		</div>
+		<div>
+			<div class="row justify-content-center">
+				<button type="button" class="btn btn-primary btn-lg button-color" id = 
+				"resultButton">
+				Get Result
+				</button>
+			</div>
+			<div class="row justify-content-center extra-content-padding">
+				<div class="col-sm-12 col-xl-12 text-center subtitle" id="displayResult">
+					
+
+				</div>
+				
+			</div>
 		</div>
 	</div>	
 	<script src="scripts/script.js"></script>

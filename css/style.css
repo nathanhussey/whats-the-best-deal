@@ -2,44 +2,63 @@
 	margin-bottom: 1em;
 	
 }
-
+.extra-title-margin{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	
+}
+.extra-content-padding{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+}
 .extra-padding{
-	padding-bottom: 2em;
-	padding-right: 4em;
-	padding-left: 4em;
+	padding-bottom: 1em;
+	padding-right: 3em;
+	padding-left: 3em;
+}
+.extra-row-margin{
+	margin-top :1em;
+	margin-bottom: 1em;
 }
 
-.item1-background{
-	background-color: #005b96; 
-
-}
-
-.item2-background{
-	background-color: #6497b1;
-}
 
 .web-background{
 	background-color: #b3cde0;
 
 }
+.content-background{
+	background-color: #3b5998;
+}
 
-.title{
-	font-size: 4em;
-	color: white;
+.title{ 
+	font-size: 1.8em;
+	color:white;
 }
 
 .subtitle{
-	font-size: 3em;
+	font-size: 1.3em;
 	color: white;
 }
 
 .subtitle2{
-	font-size: 2em;
+	font-family: Times new Roman;
+	font-size: 1em;
 	color: white;
 }
 
+.button-color{
+	background-color: #b3cde0;
+	border-color: #b3cde0;
+	color: #3b5998;
+}
 
-
+.button-color:hover {
+	background-color: #3b5998;
+	border-color: #3b5998;
+	color: #b3cde0;
+}
 
 
 
